@@ -1,0 +1,8 @@
+.btnPhotos {
+  align-self: center;
+}
+.modalImagesContainer {
+  background-color: #3c3c3e;
+  border: 1px white solid;
+  border-radius: 2%;
+}

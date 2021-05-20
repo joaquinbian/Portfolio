@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+.title {
+  padding-top: 10rem;
+}
+/* .col-12 col-md-4 { */
+
+h1,
+h3 {
+  font-family: "Bebas Neue";
+}
+.imagesContainer {
+  display: flex;
+  margin-bottom: 7%;
+  justify-content: space-around;
+}
+.landingImage {
+  width: 100%;
+  border-radius: 5%;
+}
+
+.modalContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}

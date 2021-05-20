@@ -1,0 +1,29 @@
+.title {
+  padding-top: 10rem;
+}
+.arrowUp {
+  font-size: 4rem;
+  border: 1px white solid;
+  border-radius: 50%;
+}
+.arrowContainer {
+  display: flex;
+  justify-content: center;
+  padding: 4rem;
+}
+.arrowUp:hover {
+  transform: perspective(1);
+  background-color: white;
+}
+.linkArrow {
+  color: white;
+}
+.linkArrow:hover {
+  transition-duration: 1s;
+  transition-property: color;
+  color: black;
+}
+.iconContact:hover {
+  transition-duration: 1s;
+  transform: translateY(-0.7rem);
+}

@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap");
+
+.navbarContainer {
+  position: fixed;
+  background-color: #2e68e6;
+  overflow: hidden;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  border-bottom: 1px white solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  padding: 0.7rem;
+}
+.navbarContainer a {
+  text-decoration: none;
+  color: white;
+  align-content: center;
+}
+.text {
+  font-family: "Cabin";
+}
+.linkNavbar:hover {
+  transition-duration: 1s;
+  transform: scale(1.3);
+}

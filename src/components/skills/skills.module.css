@@ -1,0 +1,10 @@
+.skillsContainer {
+  padding-top: 10rem;
+}
+.techLogo :hover {
+  transition-duration: 1s;
+  transform: scale(1.2);
+}
+.title {
+  padding-top: 10rem;
+}

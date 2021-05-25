@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import { Button, Modal } from "react-bootstrap";
 import { send } from "emailjs-com";
+import ModalConfirm from "./ModalConfirm";
 import style from "./mailForm.module.css";
 
-const MailForm = ({ showModal, setShowModal }) => {
+const MailForm = () => {
+  const [showModal, setShowModal] = useState(false);
+
   const [toSend, setToSend] = useState({
     from_name: "",
     to_name: "",
@@ -22,7 +25,15 @@ const MailForm = ({ showModal, setShowModal }) => {
       "user_LosnGqZAPulaIFOEyhhjn"
     )
       .then((response) => {
-        console.log("Success!", response.status, response.text);
+        setModalHandler();
+      })
+      .then(() => {
+        setToSend({
+          from_name: "",
+          to_name: "",
+          message: "",
+          reply_to: "",
+        });
       })
       .catch((err) => {
         console.log("Failed", err);
@@ -91,6 +102,7 @@ const MailForm = ({ showModal, setShowModal }) => {
           />
         </div>
         <Button type="submit">Send</Button>
+        <ModalConfirm showModal={showModal} setModalHandler={setModalHandler} />
       </form>
     </div>
   );

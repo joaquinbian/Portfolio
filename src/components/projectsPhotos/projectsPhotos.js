@@ -24,3 +24,18 @@ export const imagesPI = [
       "https://github.com/joaquinbian/joaquinbian/raw/main/screenshotsProjects/Photo6.png",
   },
 ];
+
+export const imagesWeatherApp = [
+  {
+    image:
+      "https://github.com/joaquinbian/joaquinbian/raw/main/screenshotsProjects/WheatherApp1.png",
+  },
+  {
+    image:
+      "https://github.com/joaquinbian/joaquinbian/raw/main/screenshotsProjects/WheatherApp2.png",
+  },
+  {
+    image:
+      "https://github.com/joaquinbian/joaquinbian/raw/main/screenshotsProjects/WheatherApp3.png",
+  },
+];

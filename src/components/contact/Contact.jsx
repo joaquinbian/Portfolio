@@ -1,11 +1,9 @@
 import React from "react";
-import { useState } from "react";
 import style from "./contact.module.css";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import MailForm from "./MailForm";
 
 const Contact = () => {
-  const [showModal, setShowModal] = useState(false);
   return (
     <div id="contact">
       <div className="container">
@@ -18,6 +16,7 @@ const Contact = () => {
               src="https://cdn.worldvectorlogo.com/logos/gmail-icon.svg"
               width="30"
               height="30"
+              alt="gmail"
             />
             <h3 className="ml-3">By sending me an e-mail...</h3>
           </div>
@@ -39,6 +38,7 @@ const Contact = () => {
                   src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg"
                   width="50"
                   height="50"
+                  alt="linkedin"
                 />
               </a>
               <h4 className="mt-2">LINKEDIN</h4>
@@ -52,6 +52,7 @@ const Contact = () => {
                   src="https://cdn.worldvectorlogo.com/logos/github-icon-1.svg"
                   width="50"
                   height="50"
+                  alt="github"
                 />
               </a>
               <h4 className="mt-2">GITHUB</h4>
@@ -68,53 +69,3 @@ const Contact = () => {
   );
 };
 export default Contact;
-{
-  /* <div className="d-flex justify-content-around">
-<div className="row ">
-  <div className="col-5">
-    <div className="d-flex">
-      <img
-        src="https://cdn.worldvectorlogo.com/logos/gmail-icon.svg"
-        width="30"
-        height="30"
-      />
-      <h3>Sending me an email</h3>
-    </div>
-  </div>
-  <div className="col-7">
-    <MailForm />
-  </div>
-</div>
-</div>
-<div className={style.arrowContainer}>
-<div className="d-flex flex-column align-items-center p-4">
-  <a
-    href="https://www.linkedin.com/in/joaquin-bianchi-js/"
-    className={style.iconContact}
-  >
-    <img
-      src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg"
-      width="50"
-      height="50"
-    />
-  </a>
-  <h4 className="mt-2">LINKEDIN</h4>
-</div>
-<div className="d-flex flex-column align-items-center p-4">
-  <a
-    href="https://github.com/joaquinbian"
-    className={style.iconContact}
-  >
-    <img
-      src="https://cdn.worldvectorlogo.com/logos/github-icon-1.svg"
-      width="50"
-      height="50"
-    />
-  </a>
-  <h4 className="mt-2">GITHUB</h4>
-</div>
-<a href="#about" className={style.linkArrow}>
-  <AiOutlineArrowUp className={style.arrowUp} />
-</a>
-</div> */
-}

@@ -18,6 +18,7 @@ const ImageSlider = ({ slides }) => {
   }
   return (
     <div className="slider">
+      <FaArrowAltCircleLeft className={style.leftArrow} onClick={prevSlide} />
       {console.log(slides)}
       {slides &&
         slides.map((slide, i) => {
@@ -27,22 +28,13 @@ const ImageSlider = ({ slides }) => {
               key={i}
             >
               {i === current && (
-                <img
-                  src={slide.image}
-                  alt={`photo ${i}`}
-                  className={style.image}
-                />
+                <img src={slide.image} alt="foto" className={style.image} />
               )}
             </div>
           );
         })}
-      <div className={style.buttonsContainer}>
-        <FaArrowAltCircleLeft className={style.leftArrow} onClick={prevSlide} />
-        <FaArrowAltCircleRight
-          className={style.rightArrow}
-          onClick={nextSlide}
-        />
-      </div>
+
+      <FaArrowAltCircleRight className={style.rightArrow} onClick={nextSlide} />
     </div>
   );
 };

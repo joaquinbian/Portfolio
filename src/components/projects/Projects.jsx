@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import style from "./projects.module.css";
 import { imagesPI, imagesWeatherApp } from "../projectsPhotos/projectsPhotos";
+import Carousel from "../carousel/Carousel";
+import OpenInNewIcon from "@material-ui/icons/OpenInNew";
 
-import ModalImages from "./ModalImages";
-import ImageSlider from "./ImagesSlider";
-
-const Home = () => {
+const Projects = () => {
   const [showModal, setShowModal] = useState(false);
   return (
     <div id="projects" className="container">
@@ -29,55 +28,87 @@ const Home = () => {
             </h4>
             <hr />
             <div className={style.imagesContainer}>
-              <img
-                src="https://cdn.worldvectorlogo.com/logos/logo-javascript.svg"
-                width="50"
-                height="50"
-                alt="javascript"
-              />
-              <img
-                src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"
-                width="50"
-                height="50"
-                alt="react"
-              />
-              <img
-                src="https://cdn.worldvectorlogo.com/logos/redux.svg"
-                width="50"
-                height="50"
-                alt="redux"
-              />
-              <img
-                src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg"
-                width="50"
-                height="50"
-                alt="node"
-              />
-              <img
-                src="https://cdn.worldvectorlogo.com/logos/express-109.svg"
-                width="50"
-                height="50"
-                alt="express"
-              />
-              <img
-                src="https://cdn.worldvectorlogo.com/logos/sequelize.svg"
-                width="50"
-                height="50"
-                alt="sequelize"
-              />
-              <img
-                src="https://cdn.worldvectorlogo.com/logos/postgresql.svg"
-                width="50"
-                height="50"
-                alt="postgre"
-              />
+              <a href="https://developer.mozilla.org/es/docs/Web/JavaScript">
+                <img
+                  src="https://cdn.worldvectorlogo.com/logos/logo-javascript.svg"
+                  width="50"
+                  height="50"
+                  alt="javascript"
+                />
+              </a>
+              <a href="https://es.reactjs.org/">
+                <img
+                  src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"
+                  width="50"
+                  height="50"
+                  alt="react"
+                />
+              </a>
+              <a href="https://es.redux.js.org/">
+                <img
+                  src="https://cdn.worldvectorlogo.com/logos/redux.svg"
+                  width="50"
+                  height="50"
+                  alt="redux"
+                />
+              </a>
+              <a href="https://nodejs.org/es/">
+                <img
+                  src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg"
+                  width="50"
+                  height="50"
+                  alt="node"
+                />
+              </a>
+              <a href="https://expressjs.com/es/">
+                <img
+                  src="https://cdn.worldvectorlogo.com/logos/express-109.svg"
+                  width="50"
+                  height="50"
+                  alt="express"
+                />
+              </a>
+              <a href="https://sequelize.org/">
+                <img
+                  src="https://cdn.worldvectorlogo.com/logos/sequelize.svg"
+                  width="50"
+                  height="50"
+                  alt="sequelize"
+                />
+              </a>
+              <a href="https://www.postgresql.org/">
+                <img
+                  src="https://cdn.worldvectorlogo.com/logos/postgresql.svg"
+                  width="50"
+                  height="50"
+                  alt="postgre"
+                />
+              </a>
             </div>
           </div>
         </div>
-        <div className="col-7 ">
-          <div className={style.modalContainer}>
+        <div className="col-7">
+          {/* <div className={style.modalContainer}>
             <ImageSlider slides={imagesPI} />
+          </div> */}
+          <div className="d-flex justify-content-around align-items-center mb-2">
+            <a
+              className={style.link}
+              href="https://github.com/joaquinbian/App-Countries"
+            >
+              <div className="d-flex align-items-center">
+                <h4 className="mb-0 mr-3">Github</h4>
+                <img
+                  src="https://cdn.worldvectorlogo.com/logos/github-icon-1.svg"
+                  width="35"
+                  height="35"
+                  alt="github"
+                />
+              </div>
+            </a>
           </div>
+
+          <Carousel img={imagesPI} />
         </div>
       </div>
       <div className="row gx-5 justify-content-between align-items-center">
@@ -95,18 +126,22 @@ const Home = () => {
             Back-End: NodeJS, Express, Sequelize and PostgreSQL
             <hr />
             <div className={style.imagesContainer}>
-              <img
-                src="https://cdn.worldvectorlogo.com/logos/logo-javascript.svg"
-                width="50"
-                height="50"
-                alt="javascript"
-              />
-              <img
-                src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"
-                width="50"
-                height="50"
-                alt="react"
-              />
+              <a href="https://developer.mozilla.org/es/docs/Web/JavaScript">
+                <img
+                  src="https://cdn.worldvectorlogo.com/logos/logo-javascript.svg"
+                  width="50"
+                  height="50"
+                  alt="javascript"
+                />
+              </a>
+              <a href="https://es.reactjs.org/">
+                <img
+                  src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"
+                  width="50"
+                  height="50"
+                  alt="react"
+                />
+              </a>
             </div>
           </h4>
         </div>
@@ -116,13 +151,40 @@ const Home = () => {
             alt="landing-page"
             className={style.landingImage}
           /> */}
-          <div className={style.modalContainer}>
+          {/* <div className={style.modalContainer}>
             <ImageSlider slides={imagesWeatherApp} />
+          </div> */}
+          <div className="d-flex justify-content-around align-items-center mb-2">
+            <a
+              className={style.link}
+              href="https://github.com/joaquinbian/WeatherApp"
+            >
+              <div className="d-flex align-items-center">
+                <h4 className="mb-0 mr-3">Github</h4>
+                <img
+                  src="https://cdn.worldvectorlogo.com/logos/github-icon-1.svg"
+                  width="35"
+                  height="35"
+                  alt="github"
+                />
+              </div>
+            </a>
+
+            <a
+              className={style.link}
+              href="https://joaquinbian.github.io/WeatherApp/"
+            >
+              <div className="d-flex align-items-center">
+                <h4 className="mb-0 mr-3">Web</h4>
+                <OpenInNewIcon fontSize="medium" />
+              </div>
+            </a>
           </div>
+          <Carousel img={imagesWeatherApp} />
         </div>
       </div>
     </div>
   );
 };
 
-export default Home;
+export default Projects;

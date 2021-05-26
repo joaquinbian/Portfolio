@@ -24,7 +24,22 @@ h3 {
   display: flex;
   justify-content: center;
   margin-top: 2%;
+  /* height: 50vh; */
 }
 .carrouselContainer {
   background-color: red;
+}
+.col-7 {
+  height: 100vw;
+}
+.link {
+  color: white;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: white;
+  text-decoration: none;
+  transform: translateY(-0.4rem);
+  transition-duration: 0.5s;
 }

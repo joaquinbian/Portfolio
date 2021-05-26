@@ -101,8 +101,12 @@ const MailForm = () => {
             className="form-control  align-self-center"
           />
         </div>
-        <Button type="submit">Send</Button>
-        <ModalConfirm showModal={showModal} setModalHandler={setModalHandler} />
+        <div className="d-flex justify-content-center ">
+          <Button type="submit" className="btn-success">
+            Send
+          </Button>
+        </div>
+        {/* <ModalConfirm showModal={showModal} setModalHandler={setModalHandler} /> */}
       </form>
     </div>
   );

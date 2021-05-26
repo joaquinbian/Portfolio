@@ -17,9 +17,9 @@ const About = () => {
               <h1> Hello there! my name is Joaquín Bianchi</h1>
               <h2>I'm a Full-Stack Developer</h2>
               <h4>
-                I like to learn new things and improve my skills <br />
-                Currently im looking for a place where i can continue with my
-                professional growth
+                Front-end oriented and passionated about learning new
+                technologies, i'm looking for a proyect that let me keep
+                learning and improving my skills to grow as a professional.
               </h4>
             </div>
           </div>

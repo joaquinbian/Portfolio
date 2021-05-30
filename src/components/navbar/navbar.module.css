@@ -2,7 +2,7 @@
 
 .navbarContainer {
   position: fixed;
-  background-color: #0061a8;
+  background-color: #000;
   overflow: hidden;
   top: 0;
   z-index: 2;
@@ -12,17 +12,23 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-content: center;
-  padding: 0.7rem;
+  /* padding: 0.7rem; */
 }
 .navbarContainer a {
   text-decoration: none;
   color: white;
   align-content: center;
+  padding: 0.7rem;
+}
+.navbarContainer a:hover {
+  background-color: white;
+  color: black;
 }
 .text {
   font-family: "Cabin";
+  margin-bottom: 0;
 }
-.linkNavbar:hover {
+/* .linkNavbar:hover {
   transition-duration: 1s;
   transform: scale(1.3);
-}
+} */

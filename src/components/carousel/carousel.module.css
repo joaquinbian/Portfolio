@@ -2,6 +2,9 @@
   width: 100%;
   height: 35vh;
   /* background-color: tomato; */
+  animation-name: appear;
+  animation-duration: 2s;
+  animation-direction: reverse;
 }
 .carouselInner {
   height: 100%;

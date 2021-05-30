@@ -29,3 +29,11 @@ h4 {
   align-self: center;
   width: 40%;
 }
+
+@media screen and (max-width: 768px) {
+  .img {
+    border-radius: 50%;
+    width: 15em;
+    height: 15em;
+  }
+}

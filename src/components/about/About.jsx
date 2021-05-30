@@ -8,11 +8,11 @@ const About = () => {
       <div className="container">
         <h1 className={style.aboutme}>About me!</h1>
         <hr className={style.hr} />
-        <div className="row align-items-center">
-          <div className="col ">
+        <div className="row d-flex align-items-center">
+          <div className="col-12 col-md-6 d-flex justify-content-center">
             <img className={style.img} src={foto} alt="foto" />
           </div>
-          <div className="col align-items-center">
+          <div className="col-12 col-md-6 mt-3">
             <div className={style.textContainer}>
               <h1> Hello there! my name is Joaquín Bianchi</h1>
               <h2>I'm a Full-Stack Developer</h2>

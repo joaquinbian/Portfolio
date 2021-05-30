@@ -10,8 +10,8 @@ const Projects = () => {
     <div id="projects" className="container">
       <h1 className={style.title}>My Projects</h1>
 
-      <div className="row gx-5 mb-5 justify-content-between align-items-center">
-        <div className="col-5">
+      <div className="row row-cols-auto gx-5 mb-5 justify-content-between align-items-center">
+        <div className="col-12 col-lg-5">
           <h1>Trip-Mate</h1>
           <h3>
             A individual project made in Henry bootcamp, with this application
@@ -87,7 +87,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className="col-7">
+        <div className="col-12 col-lg-7">
           {/* <div className={style.modalContainer}>
             <ImageSlider slides={imagesPI} />
           </div> */}
@@ -112,7 +112,7 @@ const Projects = () => {
         </div>
       </div>
       <div className="row gx-5 justify-content-between align-items-center">
-        <div className="col-5">
+        <div className="col-12 col-lg-5">
           <h1>Weather App</h1>
           <h3>
             With this application you can search how is the weather of any city
@@ -145,7 +145,7 @@ const Projects = () => {
             </div>
           </h4>
         </div>
-        <div className="col-7 ">
+        <div className="col-12 col-lg-7">
           {/* <img
             src="https://github.com/joaquinbian/joaquinbian/raw/main/screenshotsProjects/LandingPagePhoto.png"
             alt="landing-page"

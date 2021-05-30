@@ -1,0 +1,17 @@
+.loader {
+  margin: auto;
+  width: 5em;
+  height: 5em;
+}
+.loadingContainer {
+  background-color: red;
+  align-content: center;
+}
+/* div {
+  height: 100vh;
+} */
+.container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}

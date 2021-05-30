@@ -11,7 +11,7 @@ const Contact = () => {
           If you want to know more... Please let me know!
         </h1>
         <div className="row">
-          <div className="col-5 d-flex">
+          <div className="col-12 col-md-5 d-flex">
             <img
               src="https://cdn.worldvectorlogo.com/logos/gmail-icon.svg"
               width="30"
@@ -20,7 +20,7 @@ const Contact = () => {
             />
             <h3 className="ml-3">By sending me an e-mail...</h3>
           </div>
-          <div className="col-7">
+          <div className="col-12 col-md-7">
             <MailForm />
           </div>
         </div>

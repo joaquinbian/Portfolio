@@ -43,3 +43,6 @@ h3 {
   transform: translateY(-0.4rem);
   transition-duration: 0.5s;
 }
+.hr {
+  background-color: white;
+}

@@ -1,10 +1,18 @@
 .skillsContainer {
   padding-top: 10rem;
+  margin-bottom: 4rem;
 }
+
 .techLogo :hover {
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   transform: scale(1.2);
 }
-.title {
-  padding-top: 10rem;
+
+.hr {
+  background-color: white;
+}
+.logoExpress {
+  background-color: white;
+  padding: 0.5em;
+  border-radius: 4%;
 }

@@ -5,7 +5,7 @@ import MailForm from "./MailForm";
 
 const Contact = () => {
   return (
-    <div id="contact">
+    <div id="contact" className={style.contactContainer}>
       <div className="container">
         <h1 className={style.title}>
           If you want to know more... Please let me know!

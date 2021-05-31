@@ -9,6 +9,7 @@ const Projects = () => {
   return (
     <div id="projects" className="container">
       <h1 className={style.title}>My Projects</h1>
+      <hr className={style.hr} />
 
       <div className="row row-cols-auto gx-5 mb-5 justify-content-between align-items-center">
         <div className="col-12 col-lg-5">

@@ -2,7 +2,8 @@
 
 .navbarContainer {
   position: fixed;
-  background-color: #000;
+  /* background-color: #000; */
+  backdrop-filter: blur(15px);
   overflow: hidden;
   top: 0;
   z-index: 2;

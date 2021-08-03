@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./skills.module.css";
+import TechComponent from "./TechComponent";
 
 const Skills = () => {
   return (
@@ -11,114 +12,79 @@ const Skills = () => {
           <div className="col ">
             <h2>Front-End technolgies</h2>
             <div className="d-flex justify-content-around">
-              <div className="d-flex flex-column align-items-center">
-                <a
-                  href="https://developer.mozilla.org/es/docs/Web/HTML"
-                  className={style.techLogo}
-                >
-                  <img
-                    src="https://cdn.worldvectorlogo.com/logos/html5-2.svg"
-                    width="50"
-                    height="50"
-                  />
-                </a>
-                <h4 className="mt-2">HTML</h4>
-              </div>
-              <div className="d-flex flex-column align-items-center">
-                <a
-                  href="https://developer.mozilla.org/es/docs/Web/CSS"
-                  className={style.techLogo}
-                >
-                  <img
-                    src="https://cdn.worldvectorlogo.com/logos/css-5.svg"
-                    width="50"
-                    height="50"
-                  />
-                </a>
-                <h4 className="mt-2">CSS</h4>
-              </div>
-              <div className="d-flex flex-column align-items-center">
-                <a
-                  href="https://developer.mozilla.org/es/docs/Web/JavaScript"
-                  className={style.techLogo}
-                >
-                  <img
-                    src="https://cdn.worldvectorlogo.com/logos/logo-javascript.svg"
-                    width="50"
-                    height="50"
-                  />
-                </a>
-                <h4 className="mt-2">JAVASCRIPT</h4>
-              </div>
-              <div className="d-flex flex-column align-items-center">
-                <a href="https://es.reactjs.org/" className={style.techLogo}>
-                  <img
-                    src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"
-                    width="50"
-                    height="50"
-                  />
-                </a>
-                <h4 className="mt-2">REACT</h4>
-              </div>
-              <div className="d-flex flex-column align-items-center">
-                <a href="https://es.redux.js.org/" className={style.techLogo}>
-                  <img
-                    src="https://cdn.worldvectorlogo.com/logos/redux.svg"
-                    width="50"
-                    height="50"
-                  />
-                </a>
-                <h4 className="mt-2">REDUX</h4>
-              </div>
+              <TechComponent
+                name="HTML"
+                img="https://cdn.worldvectorlogo.com/logos/html-1.svg"
+                link="https://developer.mozilla.org/es/docs/Web/HTML"
+              />
+
+              <TechComponent
+                name="CSS"
+                img="https://cdn.worldvectorlogo.com/logos/css-3.svg"
+                link="https://developer.mozilla.org/es/docs/Web/CSS"
+              />
+
+              <TechComponent
+                name="JAVASCRIPT"
+                img="https://cdn.worldvectorlogo.com/logos/logo-javascript.svg"
+                link="https://developer.mozilla.org/es/docs/Web/JavaScript"
+              />
+
+              <TechComponent
+                name="REACT"
+                img="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"
+                link="https://es.reactjs.org/"
+              />
+
+              <TechComponent
+                name="REDUX"
+                img="https://cdn.worldvectorlogo.com/logos/redux.svg"
+                link="https://es.redux.js.org/"
+              />
             </div>
           </div>
           <div className="col">
             <h2>Back-End technologies</h2>
             <div className="d-flex justify-content-around">
-              <div className="d-flex flex-column align-items-center">
-                <a href="https://nodejs.org/es/" className={style.techLogo}>
-                  <img
-                    src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg"
-                    width="50"
-                    height="50"
-                  />
-                </a>
-                <h4 className="mt-2">NODEJS</h4>
-              </div>
-              <div className="d-flex flex-column align-items-center">
-                <a href="https://expressjs.com/es/" className={style.techLogo}>
-                  <img
-                    src="https://cdn.worldvectorlogo.com/logos/express-109.svg"
-                    width="50"
-                    height="50"
-                    className={style.logoExpress}
-                  />
-                </a>
-                <h4 className="mt-2">EXPRESS</h4>
-              </div>
-              <div className="d-flex flex-column align-items-center">
-                <a
-                  href="https://www.postgresql.org/"
-                  className={style.techLogo}
-                >
-                  <img
-                    src="https://cdn.worldvectorlogo.com/logos/postgresql.svg"
-                    width="50"
-                    height="50"
-                  />
-                </a>
-                <h4 className="mt-2">POSTGRE</h4>
-              </div>
-              <div className="d-flex flex-column align-items-center">
-                <a href="https://sequelize.org/" className={style.techLogo}>
-                  <img
-                    src="https://cdn.worldvectorlogo.com/logos/sequelize.svg"
-                    width="50"
-                    height="50"
-                  />
-                </a>
-                <h4 className="mt-2">SEQUELIZE</h4>
-              </div>
+              <TechComponent
+                name="NODE.JS"
+                img="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg"
+                link="https://nodejs.org/es/"
+              />
+
+              <TechComponent
+                name="EXPRESS"
+                img="https://cdn.worldvectorlogo.com/logos/express-109.svg"
+                link="https://expressjs.com/es/"
+              />
+
+              <TechComponent
+                name="POSTGRESQL"
+                img="https://cdn.worldvectorlogo.com/logos/postgresql.svg"
+                link="https://www.postgresql.org/"
+              />
+
+              <TechComponent
+                name="SEQUELIZE"
+                img="https://seeklogo.com/images/S/sequelize-logo-9A5075DB9F-seeklogo.com.png"
+                link="https://sequelize.org/"
+              />
+            </div>
+          </div>
+          <div className="col">
+            <h2>Wishlist </h2>
+            <div className="d-flex justify-content-around">
+              <TechComponent
+                name="REACT NATIVE"
+                img="https://cdn.worldvectorlogo.com/logos/react-native-1.svg"
+                link="https://reactnative.dev/"
+              />
+
+              <TechComponent
+                name="TYPESCRIPT"
+                img="https://cdn.worldvectorlogo.com/logos/typescript.svg"
+                link="https://www.typescriptlang.org/"
+              />
             </div>
           </div>
         </div>

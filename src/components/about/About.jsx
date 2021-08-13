@@ -16,11 +16,11 @@ const About = () => {
             <div className={style.textContainer}>
               <h1> Hello there! my name is Joaquín Bianchi</h1>
               <h2>I'm a Full-Stack Developer</h2>
-              <h4>
+              <h3>
                 Front-end oriented and passionated about learning new
                 technologies, i'm looking for a proyect that let me keep
                 learning and improving my skills to grow as a professional.
-              </h4>
+              </h3>
             </div>
           </div>
         </div>

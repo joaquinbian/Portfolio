@@ -3,9 +3,9 @@ import style from "./projects.module.css";
 import { imagesPI, imagesWeatherApp } from "../projectsPhotos/projectsPhotos";
 import Carousel from "../carousel/Carousel";
 import OpenInNewIcon from "@material-ui/icons/OpenInNew";
+import TechComponent from "../skills/TechComponent";
 
 const Projects = () => {
-  const [showModal, setShowModal] = useState(false);
   return (
     <div id="projects" className="container">
       <h1 className={style.title}>My Projects</h1>
@@ -29,69 +29,48 @@ const Projects = () => {
             </h4>
             <hr />
             <div className={style.imagesContainer}>
-              <a href="https://developer.mozilla.org/es/docs/Web/JavaScript">
-                <img
-                  src="https://cdn.worldvectorlogo.com/logos/logo-javascript.svg"
-                  width="50"
-                  height="50"
-                  alt="javascript"
-                />
-              </a>
-              <a href="https://es.reactjs.org/">
-                <img
-                  src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"
-                  width="50"
-                  height="50"
-                  alt="react"
-                />
-              </a>
-              <a href="https://es.redux.js.org/">
-                <img
-                  src="https://cdn.worldvectorlogo.com/logos/redux.svg"
-                  width="50"
-                  height="50"
-                  alt="redux"
-                />
-              </a>
-              <a href="https://nodejs.org/es/">
-                <img
-                  src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg"
-                  width="50"
-                  height="50"
-                  alt="node"
-                />
-              </a>
-              <a href="https://expressjs.com/es/">
-                <img
-                  src="https://cdn.worldvectorlogo.com/logos/express-109.svg"
-                  width="50"
-                  height="50"
-                  alt="express"
-                />
-              </a>
-              <a href="https://sequelize.org/">
-                <img
-                  src="https://cdn.worldvectorlogo.com/logos/sequelize.svg"
-                  width="50"
-                  height="50"
-                  alt="sequelize"
-                />
-              </a>
-              <a href="https://www.postgresql.org/">
-                <img
-                  src="https://cdn.worldvectorlogo.com/logos/postgresql.svg"
-                  width="50"
-                  height="50"
-                  alt="postgre"
-                />
-              </a>
+              <TechComponent
+                // name="JAVASCRIPT"
+                img="https://cdn.worldvectorlogo.com/logos/logo-javascript.svg"
+                link="https://developer.mozilla.org/es/docs/Web/JavaScript"
+              />
+
+              <TechComponent
+                // name="REACT"
+                img="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"
+                link="https://es.reactjs.org/"
+              />
+
+              <TechComponent
+                // name="REDUX"
+                img="https://cdn.worldvectorlogo.com/logos/redux.svg"
+                link="https://es.redux.js.org/"
+              />
+              <TechComponent
+                // name="NODE.JS"
+                img="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg"
+                link="https://nodejs.org/es/"
+              />
+
+              <TechComponent
+                // name="EXPRESS"
+                img="https://cdn.worldvectorlogo.com/logos/express-109.svg"
+                link="https://expressjs.com/es/"
+              />
+              <TechComponent
+                // name="SEQUELIZE"
+                img="https://seeklogo.com/images/S/sequelize-logo-9A5075DB9F-seeklogo.com.png"
+                link="https://sequelize.org/"
+              />
+              <TechComponent
+                // name="POSTGRESQL"
+                img="https://cdn.worldvectorlogo.com/logos/postgresql.svg"
+                link="https://www.postgresql.org/"
+              />
             </div>
           </div>
         </div>
         <div className="col-12 col-lg-7">
-          {/* <div className={style.modalContainer}>
-            <ImageSlider slides={imagesPI} />
-          </div> */}
           <div className="d-flex justify-content-around align-items-center mb-2">
             <a
               className={style.link}
@@ -127,34 +106,21 @@ const Projects = () => {
             Back-End: NodeJS, Express, Sequelize and PostgreSQL
             <hr />
             <div className={style.imagesContainer}>
-              <a href="https://developer.mozilla.org/es/docs/Web/JavaScript">
-                <img
-                  src="https://cdn.worldvectorlogo.com/logos/logo-javascript.svg"
-                  width="50"
-                  height="50"
-                  alt="javascript"
-                />
-              </a>
-              <a href="https://es.reactjs.org/">
-                <img
-                  src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"
-                  width="50"
-                  height="50"
-                  alt="react"
-                />
-              </a>
+              <TechComponent
+                // name="JAVASCRIPT"
+                img="https://cdn.worldvectorlogo.com/logos/logo-javascript.svg"
+                link="https://developer.mozilla.org/es/docs/Web/JavaScript"
+              />
+
+              <TechComponent
+                // name="REACT"
+                img="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"
+                link="https://es.reactjs.org/"
+              />
             </div>
           </h4>
         </div>
         <div className="col-12 col-lg-7">
-          {/* <img
-            src="https://github.com/joaquinbian/joaquinbian/raw/main/screenshotsProjects/LandingPagePhoto.png"
-            alt="landing-page"
-            className={style.landingImage}
-          /> */}
-          {/* <div className={style.modalContainer}>
-            <ImageSlider slides={imagesWeatherApp} />
-          </div> */}
           <div className="d-flex justify-content-around align-items-center mb-2">
             <a
               className={style.link}

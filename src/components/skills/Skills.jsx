@@ -83,7 +83,7 @@ const Skills = () => {
               <TechComponent
                 name="TYPESCRIPT"
                 img="https://cdn.worldvectorlogo.com/logos/typescript.svg"
-                link="https://www.typescriptlang.org/"
+                link="https://www.typescriptlang.org/no"
               />
             </div>
           </div>

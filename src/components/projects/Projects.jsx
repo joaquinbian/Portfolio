@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import style from "./projects.module.css";
 import { imagesPI, imagesWeatherApp } from "../projectsPhotos/projectsPhotos";
 import Carousel from "../carousel/Carousel";

@@ -18,7 +18,7 @@ const About = () => {
               <h2>I'm a Full-Stack Developer</h2>
               <h3>
                 Front-end oriented and passionated about learning new
-                technologies, i'm looking for a proyect that let me keep
+                technologies, i'm looking for a project that let me keep
                 learning and improving my skills to grow as a professional.
               </h3>
             </div>
